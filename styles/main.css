@@ -1,0 +1,744 @@
+/* UNIVERSAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+:root {
+  --BTN-COLOR: #d23166;
+  --TEXT-COLOR: #0f0101;
+  --DARK-BLACK: #000000;
+  --DARK-WHITE: #ffffff;
+}
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: inherit;
+}
+/* fredoka */
+
+/* UNIVERSAL STYLES */
+
+.header {
+  background-color: #f2ceda;
+  position: relative
+  top: 0px;
+}
+.header-container {
+  width: 1125px;
+  margin: 0 auto;
+  /* border: 4px solid blue; */
+}
+.nav {
+  width: 1125px;
+  background-color: #f2ceda;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+}
+.nav-logo {
+}
+
+.nav-logo img {
+  width: 79px;
+  height: 79px;
+}
+.nav__items-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+.nav__left-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav__item span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  color: #150101;
+
+}
+
+/* .link__item::after{
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: rgb(131, 131, 161);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+} */
+
+.link-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: purple;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  transition: 0.3s ease-in-out;
+
+}
+
+
+
+.link-item:hover::after{
+  width: 100%;
+}
+
+.same-btn {
+  width: 169px;
+  border: none;
+  border-radius: 5px;
+  padding: 13.5px 50px;
+  color: #fafafa;
+  background-color: var(--BTN-COLOR);
+  font-family: Hind Madurai;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.08px;
+}
+
+.same-btn:hover {
+  background-color: var(--DARK-WHITE);
+  color: var(--BTN-COLOR);
+  border: 2px solid var(--BTN-COLOR);
+}
+
+.same-btn:active {
+  background-color: green;
+  color: white;
+}
+.hero {
+  width: 100%;
+  position: relative;
+  top: 0px;
+  background-color: #f2ceda;
+}
+
+.hero-wrapper {
+  display: flex;
+  /* border: 2px solid black; */
+  background: #F2CEDA;
+  width: 1102px;
+}
+.hero__info {
+}
+.hero__info-wrapper {
+  width: 665px;
+  margin-top: 284px;
+  margin-bottom: 214px;
+}
+.hero__sub-title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.1em;
+  color: var(--TEXT-COLOR);
+}
+.hero__title {
+  margin-top: 6px;
+  width: 665px;
+  font-family: Fredoka One;
+  font-size: 57.33px;
+  font-weight: 1000;
+  line-height: 69.08px;
+  color: var(--TEXT-COLOR);
+}
+.ice-cream-color {
+  font-family: Fredoka One;
+  font-size: 57.33px;
+  font-weight: 700;
+  line-height: 69.08px;
+  text-align: left;
+  color: #d64474;
+}
+.hero__details {
+  margin-top: 35px;
+  width: 523px;
+  font-family: Hind Madurai;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--TEXT-COLOR);
+}
+.hero__img {
+  /* border: 2px solid blue; */
+  position: absolute;
+  top: 125px;
+  left: 870px;
+}
+
+/* .hero-img {
+  width: 597px;
+  height: 671px;
+  
+} */
+
+.hero-btn {
+  margin-top: 50px;
+}
+
+/* MAIN */
+
+/* OFFER-SECTION-1 */
+.offer {
+}
+.card-wrapper {
+  width: 1117px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 39px;
+  margin: 62px auto 100px;
+}
+.card {
+  width: 250px;
+  /* border: 2px solid purple; */
+  border-radius: 7px;
+  background-color: var(--DARK-WHITE);
+  box-shadow: 20px 20px 50px 0px #0000001a;
+}
+
+.card-header img {
+  width: 51px;
+  height: 43.35px;
+  margin: 33px 100px 0px 100px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24.65px;
+  margin-bottom: 27px;
+}
+.card-title {
+  font-family: Hind Madurai;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.6px;
+  color: var(--DARK-BLACK);
+}
+.details {
+  font-family: Hind Madurai;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.32px;
+  text-align: center;
+  color: var(--DARK-BLACK);
+}
+
+/* section-2 BROWN SUGAR OATMEA*/
+.brown-sugar-oatmea {
+  /* border: 2px solid black; */
+  background-color: #f8edf0;
+}
+.container {
+  width: 1120px;
+  /* border: 6px solid purple; */
+  margin: 0 auto;
+}
+.brown-sugar-oatmea__wrapper {
+  width: 100%;
+  margin-top: 141.39px;
+  margin-bottom: 146.4px;
+  /* border: 1px solid orangered; */
+  position: relative;
+}
+.brown-sugar-oatmea__info {
+  width: 442px;
+}
+.brown-sugar-oatmea__title {
+  font-family: Hind Madurai;
+  font-size: 44.2px;
+  font-weight: 600;
+  line-height: 48.84px;
+  color: #150101;
+}
+.brown-sugar-oatmea__details {
+  margin-top: 16px;
+}
+.same-btn {
+}
+.brown-sugar-oatmea__btn {
+  margin-top: 35px;
+  font-family: Roboto;
+  font-size: 16px;
+  padding: 15px 40px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+.brown-sugar-oatmea__img {
+  position: absolute;
+  top: -213.6px;
+  left: 516px;
+}
+
+.brown-sugar-oatmea__img img {
+  /* border: 2px solid blue; */
+  width: 655px;
+  height: 656px;
+}
+/* section-2 BROWN SUGAR OATMEA*/
+
+/* section-3 OUR PRODUCT */
+.our-product {
+  margin-top: 132px;
+}
+.our-product__title {
+  font-family: Hind Madurai;
+  font-size: 44.2px;
+  font-weight: 600;
+  line-height: 61px;
+  text-align: center;
+  color: #150101;
+}
+.our-product__types-link {
+  margin-top: 64px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.our-product__type {
+}
+.our-product__wrapper {
+  /* border: 3px solid blue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.our-product__section {
+  display: flex;
+  gap: 85px;
+}
+
+.our-product__section-brown-bread__img {
+}
+.our-product__section__info {
+  width: 454px;
+  margin-top: 60px;
+}
+
+.our-product__section-canyenne-chocolate .our-product__section__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.our-product__section-canyenne-chocolate .our-product__section__info-details {
+  text-align: right;
+}
+.our-product__section__info-title {
+  font-family: Hind Madurai;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35.88px;
+}
+
+.our-product__section__info-details {
+  margin-top: 11px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--DARK-BLACK);
+}
+.our-product__price {
+  margin-top: 28px;
+}
+
+.our-product__price span {
+  display: inline-block;
+}
+.our-product__current-price {
+  font-family: Hind Madurai;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35.88px;
+  color: var(--DARK-BLACK);
+}
+.our-product__old-price {
+  font-family: Hind Madurai;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.6px;
+  color: var(--DARK-BLACK);
+  text-decoration: line-through;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+.our-product__btn {
+  margin-top: 10px;
+  width: 165px;
+  padding: 15px 50px;
+}
+.same-btn {
+}
+/* section-3 OUR PRODUCT */
+
+/* section-4 comments */
+
+.comments {
+}
+.container {
+}
+
+.comments__wrapper {
+  margin-top: 117px;
+  margin-bottom: 149px;
+  height: 442px;
+  display: flex;
+  gap: 224px;
+  /* border: 4px solid green; */
+}
+.cooments__info {
+  width: 345px;
+  margin-top: 87px;
+}
+.comments__user {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.comments__user-picture img {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+}
+.comments__user__user-info {
+}
+.comments__user__user-name {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  color: var(--DARK-BLACK);
+}
+.comments__user__user-nationality {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+  color: var(--DARK-BLACK);
+}
+.comments__user-comment {
+  width: 322px;
+  margin-top: 46px;
+  margin-left: 21px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--DARK-BLACK);
+  position: relative;
+}
+
+.comments__user-comment::before {
+  content: url(../images/svg/double\ quote-down.svg);
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  left: -20px;
+}
+
+.comments__user-comment::after {
+  content: url(../images/svg/double\ quote-up.svg);
+  position: absolute;
+  right: 10px;
+}
+.comments__users-scroll {
+  width: 270px;
+  /* border: 1px solid black; */
+  margin-top: 56px;
+  display: flex;
+  gap: 27px;
+  align-items: center;
+  justify-content: center;
+}
+.comments__users-scroll__left-arrow img,
+.comments__users-scroll__right-arrow img {
+  width: 14px;
+  height: 14px;
+}
+.comments__users-scroll__man img,
+.adeli-little {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.adeli-main {
+  width: 58px;
+  height: 58px;
+}
+.adeli-little {
+}
+.comments__users-scroll__right-arrow {
+}
+.comments__img {
+}
+/* section-4 comments */
+
+/* section-5 order-food */
+.order-food {
+  background-color: #f8edf0;
+}
+.container {
+}
+.order-food__wrapper {
+  height: 553px;
+  margin-top: 36px;
+  margin-bottom: 45px;
+  display: flex;
+  gap: 135px;
+}
+.order-food__img {
+  width: 269px;
+  height: 553px;
+}
+.order-food__info {
+  width: 621px;
+  margin-top: 85px;
+}
+.order-food__title {
+  font-family: Roboto;
+  font-size: 44.2px;
+  font-weight: 500;
+  line-height: 51.8px;
+  color: var(--DARK-BLACK);
+}
+.order-food__details {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  letter-spacing: 0.01em;
+  color: #0f0101;
+}
+.order-food__menu {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.order-food__menu-item a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.order-food__icon {
+}
+.order-food__menu-item-title {
+}
+.order-food__info__app {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.order-food__info-google-play {
+}
+/* section-5 order-food */
+
+/* section-6 accepting-questions */
+.accepting-questions {
+}
+.container {
+}
+.accepting-questions__wrapper {
+  width: 637px;
+  margin: 110px auto 110px auto;
+}
+.accepting-questions__title {
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 51.56px;
+  text-align: center;
+  color: var(--DARK-BLACK);
+}
+.get-info-from-users {
+  margin-top: 30px;
+  display: flex;
+  gap: 36px;
+}
+.phone-nomer {
+  width: 303px;
+  padding: 29px 0px 29px 25px;
+  border: 1px solid #ffa3a3;
+  border-radius: 5px;
+}
+
+.question-type {
+  width: 303px;
+  padding: 29px 0px 29px 25px;
+  border: 1px solid #ffa3a3;
+  border-radius: 5px;
+}
+.send-question {
+  margin-top: 37px;
+  display: flex;
+  border: 1px solid #ffa3a3;
+  border-radius: 5px;
+}
+.enter-question {
+  padding: 29px 0px 29px 25px;
+  border: none;
+  width: 503px;
+}
+.accepting-questions__send-btn {
+  border: none;
+  width: 134px;
+}
+/* section-6 accepting-questions */
+
+/* footer */
+
+.footer {
+  background-color: #0a0808;
+  padding-top: 70px;
+  padding-bottom: 114px;
+}
+.footer-wrapper {
+  background-color: #0a0808;
+}
+.footer-logo {
+}
+
+.footer-logo img {
+  width: 79px;
+  height: 79px;
+}
+.footer__links-wrapper {
+  /* width: inherit; */
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.follow-us {
+  margin-top: 9px;
+  margin-left: 7px;
+}
+.footer__follow-us__footer-details {
+  width: 207px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.76px;
+  letter-spacing: 0.01em;
+  color: var(--DARK-WHITE);
+}
+.footer__follow-us-title {
+  margin-top: 25px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+  color: var(--DARK-WHITE);
+}
+.social-networks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-network__item {
+  margin-top: 8px;
+}
+
+.social-network__item img {
+  width: 15px;
+  height: 15px;
+}
+
+.footer a {
+  text-transform: capitalize;
+}
+.home a {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: var(--DARK-WHITE);
+}
+.home-item a {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: var(--DARK-WHITE);
+}
+
+.footer__newsletter h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: var(--DARK-WHITE);
+}
+.footer__subscribe {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  width: 388px;
+  border: 2px solid #d64374;
+  border-radius: 5px;
+}
+.footer__email {
+  padding: 20px 32px;
+  border: #d64374;;
+  background-color: #0a0808;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+.footer__pay-card {
+  margin-top: 13px;
+  display: flex;
+  gap: 13px;
+}
+
+.footer-btn {
+  width: 125px;
+  padding: 16px 18px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  background-color: var(--BTN-COLOR);
+  color: var(--DARK-WHITE);
+}
+.pay-pal {
+}
+.mastercard {
+}
+.visa_card {
+}
+
+/* footer */
